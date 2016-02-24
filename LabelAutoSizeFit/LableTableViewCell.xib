@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="LableTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlZ-76-tSd">
+                        <rect key="frame" x="20" y="8" width="50" height="59"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="250" constant="50" id="tBw-0G-tZo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="x3q-Xe-TsP">
+                        <rect key="frame" x="82" y="23" width="50" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="46Z-Qf-wof"/>
+                            <constraint firstAttribute="height" constant="30" id="pJh-qn-Tf9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L05-qY-NFG">
+                        <rect key="frame" x="155" y="8" width="222" height="59"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="x3q-Xe-TsP" firstAttribute="leading" secondItem="JlZ-76-tSd" secondAttribute="trailing" constant="12" id="3KE-j5-HWc"/>
+                    <constraint firstItem="L05-qY-NFG" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="5Xy-Uo-AgL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JlZ-76-tSd" secondAttribute="bottom" id="6AN-Xl-Umv"/>
+                    <constraint firstItem="JlZ-76-tSd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Zo-Ul-ujm"/>
+                    <constraint firstItem="L05-qY-NFG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9bn-pa-59M"/>
+                    <constraint firstItem="JlZ-76-tSd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="HC7-Ei-Flj"/>
+                    <constraint firstItem="x3q-Xe-TsP" firstAttribute="centerY" secondItem="JlZ-76-tSd" secondAttribute="centerY" id="TCX-Cu-umW"/>
+                    <constraint firstItem="L05-qY-NFG" firstAttribute="leading" secondItem="x3q-Xe-TsP" secondAttribute="trailing" constant="12" id="aQn-Yd-n3o"/>
+                    <constraint firstItem="L05-qY-NFG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="qrW-23-veH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="endPointLabel" destination="L05-qY-NFG" id="1oV-Md-ebm"/>
+                <outlet property="startPointLabel" destination="JlZ-76-tSd" id="13b-h1-kT9"/>
+            </connections>
+            <point key="canvasLocation" x="240.5" y="393"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.png" width="24" height="18"/>
+    </resources>
+</document>
