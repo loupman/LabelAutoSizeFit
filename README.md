@@ -1,0 +1,2 @@
+# LabelAutoSizeFit
+使用XIB自动适应UILabel的宽度
